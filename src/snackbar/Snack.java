@@ -19,6 +19,7 @@ public class Snack
 		this.vendingMachineId = vendingMachineId;
 	}
 
+	//====================================== GET AND SET ID
 	public int getId()
 	{
 		return id;
@@ -29,6 +30,7 @@ public class Snack
 		this.id = id;
 	}
 
+	//====================================== GET AND SET NAME
 	public String getName()
 	{
 		return name;
@@ -39,6 +41,7 @@ public class Snack
 		this.name = name;
 	}
 
+	//====================================== GET AND SET QUANTITY
 	public int getQuantity()
 	{
 		return quantity;
@@ -49,6 +52,7 @@ public class Snack
 		this.quantity = quantity;
 	}
 
+	//====================================== GET AND SET COST
 	public int getCost()
 	{
 		return cost;
@@ -59,6 +63,7 @@ public class Snack
 		this.cost = cost;
 	}
 
+	//====================================== GET AND SET VENDING MACHINE ID
 	public int getVendingMachineId()
 	{
 		return vendingMachineId;
@@ -67,5 +72,23 @@ public class Snack
 	public void setVendingMachineId(int vendingMachineId)
 	{
 		this.vendingMachineId = vendingMachineId;
+	}
+
+	//====================================== ADD QUANTITY
+	public void addQuantity(int additionalQuantity)
+	{
+		this.quantity = quantity + additionalQuantity;
+	}
+
+	//====================================== BUY SNACK FROM GIVEN QUANTITY
+	public void buySnack(int boughtQuantity)
+	{
+		this.quantity = quantity - boughtQuantity;
+	}
+
+	//====================================== GET TOTAL COST GIVEN A QUANTITY
+	public int getTotalCost(int quantity)
+	{
+		return cost * quantity;
 	}
 }
