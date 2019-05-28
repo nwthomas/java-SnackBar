@@ -71,6 +71,29 @@ public class Main
   	System.out.println("Customer 2 cash: " + c2.getCash());
   	System.out.println("Snack 3 quantity: " + sPretzel.getQuantity());
   	System.out.println();
+
+  	// Stretch goals
+  	System.out.println("STRETCH GOALS - Extra goals assigned in README.md");
+  	System.out.println();
+  	// Chips
+  	System.out.println(sChips.toString(vFood.getName()));
+  	System.out.println();
+
+  	// Chocolate Bar
+  	System.out.println(sChocolateBar.toString(vFood.getName()));
+  	System.out.println();
+
+  	// Pretzel
+  	System.out.println(sPretzel.toString(vFood.getName()));
+  	System.out.println();
+
+  	// Soda
+  	System.out.println(sSoda.toString(vDrink.getName()));
+  	System.out.println();
+
+  	// Water
+  	System.out.println(sWater.toString(vDrink.getName()));
+  	System.out.println();
   }
 
   public static void main(String[] args) 

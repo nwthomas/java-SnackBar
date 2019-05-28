@@ -6,9 +6,9 @@ public class Snack
 	private static int maxId = 0;
 	private int id;
 	private String name;
-	private int quantity; // Possibly double later
-	private double cost; // Possibly double later
-	private int vendingMachineId; // Possibly double later
+	private int quantity;
+	private double cost;
+	private int vendingMachineId;
 
 	// CONSTRUCTOR
 	public Snack (String name, int quantity, double cost, int vendingMachineId)
@@ -93,5 +93,15 @@ public class Snack
 	public double getTotalCost(int quantity)
 	{
 		return cost * quantity;
+	}
+
+	//====================================== DISPLAY SNACK
+	public String toString(String vendingMachineName)
+	{
+		String rtnStr = "name:                 " + name + "\n" +
+						"vending machine name: " + vendingMachineName + "\n" +
+						"quantity on hand:     " + quantity + "\n" +
+						"total cost:           " + (cost * quantity) + "\n";
+		return rtnStr;
 	}
 }
