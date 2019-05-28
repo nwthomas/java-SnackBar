@@ -11,7 +11,7 @@ public class Snack
 	private int vendingMachineId; // Possibly double later
 
 	// CONSTRUCTOR
-	public Snack(String name, int quantity, int cost, int vendingMachineId)
+	public Snack (String name, int quantity, int cost, int vendingMachineId)
 	{
 		maxId++;
 		id = maxId;
@@ -80,13 +80,13 @@ public class Snack
 	//====================================== ADD QUANTITY
 	public void addQuantity(int additionalQuantity)
 	{
-		this.quantity = quantity + additionalQuantity;
+		this.quantity += additionalQuantity;
 	}
 
 	//====================================== BUY SNACK FROM GIVEN QUANTITY
 	public void buySnack(int boughtQuantity)
 	{
-		this.quantity = quantity - boughtQuantity;
+		this.quantity -= boughtQuantity;
 	}
 
 	//====================================== GET TOTAL COST GIVEN A QUANTITY

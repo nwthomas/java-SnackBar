@@ -1,6 +1,6 @@
 package snackbar;
 
-public class Customer
+public class VendingMachine
 {
 	// FIELDS
 	private static int maxId = 0;
@@ -8,7 +8,7 @@ public class Customer
 	private String name;
 
 	// CONSTRUCTOR
-	public Customer(String name)
+	public VendingMachine (String name)
 	{
 		maxId++;
 		id = maxId;
