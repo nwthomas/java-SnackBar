@@ -51,11 +51,26 @@ public class Main
   	System.out.println(c1.getCash());
   	System.out.println();
 
+  	System.out.println("5. Customer 1 buys 1 of snack 2. Print Customer 1 Cash on Hand. Print quantity of snack 2.");
+  	double purchase4 = 1 * sChocolateBar.getCost();
+  	c1.setCash(purchase4);
+  	sChocolateBar.buySnack(1);
+  	System.out.println("Customer 1 cash: " + c1.getCash());
+  	System.out.println("Snack 2 quantity: " + sChocolateBar.getQuantity());
+  	System.out.println();
 
-  	// Extra Processing
-  	System.out.println(c1.toString());
-  	System.out.println(c2.toString());
+  	System.out.println("6. Add 12 more items to snack 3. Print quantity of snack 3.");
+  	sPretzel.setQuantity(10);
+  	System.out.println(sPretzel.getQuantity());
+  	System.out.println();
 
+  	System.out.println("7. Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity of snack 3.");
+  	double purchase5 = 3 * sPretzel.getCost();
+  	c2.makePurchase(purchase5);
+  	sPretzel.buySnack(3);
+  	System.out.println("Customer 2 cash: " + c2.getCash());
+  	System.out.println("Snack 3 quantity: " + sPretzel.getQuantity());
+  	System.out.println();
   }
 
   public static void main(String[] args) 
