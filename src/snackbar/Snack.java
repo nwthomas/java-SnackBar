@@ -7,11 +7,11 @@ public class Snack
 	private int id;
 	private String name;
 	private int quantity; // Possibly double later
-	private int cost; // Possibly double later
+	private double cost; // Possibly double later
 	private int vendingMachineId; // Possibly double later
 
 	// CONSTRUCTOR
-	public Snack (String name, int quantity, int cost, int vendingMachineId)
+	public Snack (String name, int quantity, double cost, int vendingMachineId)
 	{
 		maxId++;
 		id = maxId;
@@ -56,12 +56,12 @@ public class Snack
 	}
 
 	//====================================== GET AND SET COST
-	public int getCost()
+	public double getCost()
 	{
 		return cost;
 	}
 
-	public void setCost(int cost)
+	public void setCost(double cost)
 	{
 		this.cost = cost;
 	}
@@ -90,7 +90,7 @@ public class Snack
 	}
 
 	//====================================== GET TOTAL COST GIVEN A QUANTITY
-	public int getTotalCost(int quantity)
+	public double getTotalCost(int quantity)
 	{
 		return cost * quantity;
 	}

@@ -6,10 +6,10 @@ public class Customer
 	private static int maxId = 0;
 	private int id;
 	private String name;
-	private int cash;
+	private double cash;
 
 	// CONSTRUCTOR
-	public Customer (String name, int cash)
+	public Customer (String name, double cash)
 	{
 		maxId++;
 		id = maxId;
@@ -41,19 +41,29 @@ public class Customer
 	}
 
 	//====================================== GET AND SET CASH 
-	public int getCash()
+	public double getCash()
 	{
 		return cash;
 	}
 
-	public void setCash(int cash)
+	public void setCash(double cash)
 	{
 		this.cash = cash;
 	}
 
 	//====================================== MAKE PURCHASE
-	public void makePurchase(int cashUsed)
+	public void makePurchase(double cashUsed)
 	{
 		this.cash -= cashUsed; 
+	}
+
+	//====================================== DISPLAY CUSTOMER
+	@Override
+	public String toString()
+	{
+		String rtnStr = "id: " + id + "\n" +
+						"name: " + name + "\n" +
+						"cash: " + cash + "\n";
+		return rtnStr;
 	}
 }
