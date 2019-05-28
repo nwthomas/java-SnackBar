@@ -2,6 +2,7 @@ package snackbar;
 
 public class Snack
 {
+	// FIELDS
 	private static int maxId = 0;
 	private int id;
 	private String name;
@@ -9,6 +10,7 @@ public class Snack
 	private int cost; // Possibly double later
 	private int vendingMachineId; // Possibly double later
 
+	// CONSTRUCTOR
 	public Snack(String name, int quantity, int cost, int vendingMachineId)
 	{
 		maxId++;
@@ -19,6 +21,7 @@ public class Snack
 		this.vendingMachineId = vendingMachineId;
 	}
 
+	// FIELDS
 	//====================================== GET AND SET ID
 	public int getId()
 	{
