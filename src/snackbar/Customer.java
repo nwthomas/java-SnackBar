@@ -48,7 +48,7 @@ public class Customer
 
 	public void setCash(double cash)
 	{
-		this.cash = cash;
+		this.cash += cash;
 	}
 
 	//====================================== MAKE PURCHASE

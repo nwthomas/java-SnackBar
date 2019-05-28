@@ -38,8 +38,18 @@ public class Main
   	System.out.println("Snack 3 quantity: " + sPretzel.getQuantity());
   	System.out.println();
 
-  	System.out.println("3. Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity of snack 4.")
+  	System.out.println("3. Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity of snack 4.");
+  	double purchase3 = 2 * sSoda.getCost();
+  	c2.makePurchase(purchase3);
+  	sSoda.buySnack(2);
+  	System.out.println("Customer 2 cash: " + c2.getCash());
+  	System.out.println("Snack 4 quantity: " + sSoda.getQuantity());
+  	System.out.println();
 
+  	System.out.println("4. Customer 1 finds $10. Print Customer 1 Cash on Hand.");
+  	c1.setCash(10.00);
+  	System.out.println(c1.getCash());
+  	System.out.println();
 
 
   	// Extra Processing
